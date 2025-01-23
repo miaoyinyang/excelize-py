@@ -737,3 +737,10 @@ class _GetTablesResult(Structure):
         ("Tables", POINTER(_Table)),
         ("Err", c_char_p),
     ]
+    
+class SearchSheetResult(Structure):
+    _fields_ = [
+        ("Cellslen", c_int),
+        ("Cells", POINTER(c_char_p)),
+        ("Err", c_char_p),
+    ]
