@@ -754,3 +754,10 @@ struct GetTablesResult
     struct Table *Tables;
     char *Err;
 };
+
+struct SearchSheetResult
+{
+    int Cellslen;
+	char *Cells;
+    char *Err;
+};
